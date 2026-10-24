@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | SC Industries</title>
+  <meta name="description" content="Get in touch with SC Industries. Visit, call or send us a message.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script src="assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="contact" class="font-sans">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="dots">
+      <div class="mx-auto max-w-7xl px-4 py-16 text-center">
+        <p class="font-bold uppercase tracking-wider text-sky2-600">Contact us</p>
+        <h1 class="mt-3 font-display text-5xl font-semibold text-grape-900 sm:text-6xl">We’d love to <span class="squiggle">hear from you</span></h1>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-ink/75">Questions about a product, a project you’re planning, or just want to say hello? Send us a note and we’ll get back to you within one business day.</p>
+      </div>
+    </section>
+
+    <section class="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-[1fr_1.4fr]">
+      <!-- Info cards -->
+      <div class="space-y-5">
+        <div class="flex gap-4 rounded-blob bg-white p-6 shadow-soft ring-1 ring-grape-100">
+          <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-sun-200 text-2xl">📍</span>
+          <div>
+            <h2 class="font-display text-xl font-semibold text-grape-900">Visit the store</h2>
+            <p class="mt-1 text-ink/70">123 Workshop Lane<br>Springfield, ST 01234</p>
+          </div>
+        </div>
+        <div class="flex gap-4 rounded-blob bg-white p-6 shadow-soft ring-1 ring-grape-100">
+          <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-grape-200 text-2xl">📞</span>
+          <div>
+            <h2 class="font-display text-xl font-semibold text-grape-900">Give us a call</h2>
+            <p class="mt-1 text-ink/70"><a href="tel:+15550123456" class="font-bold text-grape-700 hover:underline">(555) 012-3456</a><br>We pick up fast, promise.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 rounded-blob bg-white p-6 shadow-soft ring-1 ring-grape-100">
+          <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-sky2-200 text-2xl">✉️</span>
+          <div>
+            <h2 class="font-display text-xl font-semibold text-grape-900">Email us</h2>
+            <p class="mt-1 text-ink/70"><a href="mailto:hello@scindustries.example" class="font-bold text-grape-700 hover:underline">hello@scindustries.example</a></p>
+          </div>
+        </div>
+        <div class="rounded-blob bg-grape-800 p-6 text-white shadow-soft">
+          <h2 class="font-display text-xl font-semibold text-sun-300">Opening hours</h2>
+          <dl class="mt-3 space-y-2">
+            <div class="flex justify-between"><dt>Monday – Friday</dt><dd class="font-bold">8:00am – 6:00pm</dd></div>
+            <div class="flex justify-between"><dt>Saturday</dt><dd class="font-bold">8:00am – 4:00pm</dd></div>
+            <div class="flex justify-between"><dt>Sunday</dt><dd class="font-bold">10:00am – 2:00pm</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <!-- Form (visual only) -->
+      <form id="contact-form" class="rounded-blob bg-white p-8 shadow-soft ring-1 ring-grape-100" novalidate>
+        <h2 class="font-display text-3xl font-semibold text-grape-900">Send a message</h2>
+        <div class="mt-6 grid gap-5 sm:grid-cols-2">
+          <div>
+            <label for="name" class="font-bold text-ink/80">Your name</label>
+            <input id="name" name="name" required class="mt-2 w-full rounded-2xl border-2 border-grape-100 bg-cream px-4 py-3 outline-none transition focus:border-grape-400" placeholder="Alex Smith">
+          </div>
+          <div>
+            <label for="email" class="font-bold text-ink/80">Email</label>
+            <input id="email" name="email" type="email" required class="mt-2 w-full rounded-2xl border-2 border-grape-100 bg-cream px-4 py-3 outline-none transition focus:border-grape-400" placeholder="alex@example.com">
+          </div>
+          <div>
+            <label for="phone" class="font-bold text-ink/80">Phone <span class="font-normal text-ink/50">(optional)</span></label>
+            <input id="phone" name="phone" type="tel" class="mt-2 w-full rounded-2xl border-2 border-grape-100 bg-cream px-4 py-3 outline-none transition focus:border-grape-400" placeholder="(555) 000-0000">
+          </div>
+          <div>
+            <label for="topic" class="font-bold text-ink/80">Topic</label>
+            <select id="topic" name="topic" class="mt-2 w-full rounded-2xl border-2 border-grape-100 bg-cream px-4 py-3 outline-none transition focus:border-grape-400">
+              <option>General question</option>
+              <option>Product advice</option>
+              <option>Order &amp; delivery</option>
+              <option>Returns</option>
+              <option>Trade account</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="message" class="font-bold text-ink/80">Message</label>
+            <textarea id="message" name="message" rows="6" required class="mt-2 w-full rounded-2xl border-2 border-grape-100 bg-cream px-4 py-3 outline-none transition focus:border-grape-400" placeholder="Tell us how we can help…"></textarea>
+          </div>
+        </div>
+        <p id="form-error" class="mt-4 hidden font-semibold text-red-600" role="alert">Please fill in your name, a valid email and a message.</p>
+        <button type="submit" class="mt-6 w-full rounded-full bg-grape-700 px-8 py-4 font-display text-lg font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-grape-800 sm:w-auto">Send message</button>
+      </form>
+    </section>
+
+    <!-- Map placeholder -->
+    <section class="mx-auto max-w-7xl px-4 pt-12">
+      <div class="dots relative grid h-72 place-items-center overflow-hidden rounded-blob bg-sky2-50 ring-1 ring-sky2-100">
+        <div class="absolute left-0 top-1/2 h-6 w-full -rotate-6 bg-white/80" aria-hidden="true"></div>
+        <div class="absolute left-1/3 top-0 h-full w-6 rotate-12 bg-white/80" aria-hidden="true"></div>
+        <div class="relative text-center">
+          <span class="text-5xl">📍</span>
+          <p class="mt-2 rounded-full bg-white px-5 py-2 font-display font-semibold text-grape-900 shadow-soft">SC Industries, 123 Workshop Lane</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script>
+    // Visual-only form: validates, then shows a thank-you toast without sending anything.
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const valid = form.name.value.trim() && form.email.validity.valid && form.email.value && form.message.value.trim();
+      document.getElementById('form-error').classList.toggle('hidden', Boolean(valid));
+      if (!valid) return;
+      form.reset();
+      showToast('💌 Thanks! We’ll be in touch soon.');
+    });
+  </script>
+</body>
+</html>

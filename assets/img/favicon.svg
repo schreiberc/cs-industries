@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <path d="M24 3 42 13.5v21L24 45 6 34.5v-21Z" fill="#6720d4"/>
+  <path d="M24 9 37 16.5v15L24 39 11 31.5v-15Z" fill="#ffc51c"/>
+  <text x="24" y="29.5" text-anchor="middle" font-family="Arial Rounded MT Bold, Arial, sans-serif" font-weight="700" font-size="14" fill="#3f1782">SC</text>
+</svg>

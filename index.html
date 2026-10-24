@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SC Industries | Hardware, Furniture, Kitchen, Tech &amp; Bathroom</title>
+  <meta name="description" content="SC Industries is your friendly local store for hardware, furniture, kitchen items, technology and bathroom essentials.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script src="assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="home" class="font-sans">
+  <div id="site-header"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="dots relative overflow-hidden">
+      <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-sun-200/60 blur-3xl" aria-hidden="true"></div>
+      <div class="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-sky2-200/60 blur-3xl" aria-hidden="true"></div>
+      <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 md:grid-cols-2 md:py-24">
+        <div>
+          <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-sm font-bold text-grape-700 shadow-soft">
+            <span class="h-2 w-2 rounded-full bg-sun-400"></span> Your friendly local store
+          </span>
+          <h1 class="mt-6 font-display text-5xl font-semibold leading-tight text-grape-900 sm:text-6xl">
+            Everything you need to make your place <span class="squiggle text-sky2-600">feel like home</span>.
+          </h1>
+          <p class="mt-6 max-w-lg text-lg text-ink/75">
+            From the first nail to the final cushion, SC Industries has the tools, furniture, kitchenware, tech and bathroom bits to bring your ideas to life, with friendly advice along the way.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="products.html" class="rounded-full bg-grape-700 px-7 py-3.5 font-display text-lg font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-grape-800">Browse the shop</a>
+            <a href="about.html" class="rounded-full border-2 border-grape-200 bg-white px-7 py-3.5 font-display text-lg font-semibold text-grape-800 transition hover:border-grape-400">Our story</a>
+          </div>
+          <dl class="mt-10 grid max-w-md grid-cols-3 gap-4">
+            <div><dt class="text-sm text-ink/60">Happy customers</dt><dd class="font-display text-2xl font-semibold text-grape-800">25k+</dd></div>
+            <div><dt class="text-sm text-ink/60">Products</dt><dd class="font-display text-2xl font-semibold text-grape-800">3,000+</dd></div>
+            <div><dt class="text-sm text-ink/60">Avg. rating</dt><dd class="font-display text-2xl font-semibold text-grape-800">4.8 ★</dd></div>
+          </dl>
+        </div>
+        <div class="relative">
+          <div class="absolute -right-3 -top-3 h-full w-full rounded-blob bg-sun-300" aria-hidden="true"></div>
+          <img src="assets/img/site/hero-tools.jpg" alt="A tidy workshop wall full of hand tools" class="relative aspect-[4/3] w-full rounded-blob object-cover shadow-soft">
+          <div class="absolute -bottom-6 -left-4 flex items-center gap-3 rounded-2xl bg-white p-4 shadow-soft sm:-left-8">
+            <span class="grid h-12 w-12 place-items-center rounded-full bg-sky2-100 text-2xl">🧰</span>
+            <div>
+              <p class="font-display font-semibold text-grape-900">Free delivery</p>
+              <p class="text-sm text-ink/60">on orders over $99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="mx-auto max-w-7xl px-4 pt-20">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="font-bold uppercase tracking-wider text-sky2-600">Shop by department</p>
+          <h2 class="mt-1 font-display text-4xl font-semibold text-grape-900">What are you working on?</h2>
+        </div>
+        <a href="products.html" class="font-bold text-grape-700 hover:underline">See all products →</a>
+      </div>
+      <div id="category-grid" class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-5"></div>
+    </section>
+
+    <!-- Featured -->
+    <section class="mx-auto max-w-7xl px-4 pt-20">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="font-bold uppercase tracking-wider text-sky2-600">Customer favourites</p>
+          <h2 class="mt-1 font-display text-4xl font-semibold text-grape-900">Featured products</h2>
+        </div>
+        <a href="products.html?sort=rating" class="font-bold text-grape-700 hover:underline">Shop top rated →</a>
+      </div>
+      <div id="featured-grid" class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
+    </section>
+
+    <!-- Promo banner -->
+    <section class="mx-auto max-w-7xl px-4 pt-20">
+      <div class="relative overflow-hidden rounded-blob bg-gradient-to-br from-grape-700 via-grape-600 to-sky2-600 px-8 py-12 text-white md:px-14">
+        <div class="absolute -right-10 -top-10 h-56 w-56 rounded-full bg-sun-300/30" aria-hidden="true"></div>
+        <div class="absolute -bottom-16 right-32 h-40 w-40 rounded-full bg-sky2-300/30" aria-hidden="true"></div>
+        <div class="relative grid items-center gap-8 md:grid-cols-[1.5fr_1fr]">
+          <div>
+            <p class="font-bold uppercase tracking-wider text-sun-300">Spring refresh sale</p>
+            <h2 class="mt-2 font-display text-4xl font-semibold leading-tight">Up to 20% off selected furniture &amp; tools</h2>
+            <p class="mt-3 max-w-xl text-grape-100">Give your home a little love. Grab a bargain on lounge sets, socket kits and more while stocks last.</p>
+          </div>
+          <div class="md:text-right">
+            <a href="products.html?sort=price-asc" class="inline-block rounded-full bg-sun-300 px-8 py-4 font-display text-lg font-semibold text-grape-900 shadow-pop transition hover:-translate-y-0.5">Shop the sale</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="mx-auto max-w-7xl px-4 pt-20">
+      <h2 class="text-center font-display text-4xl font-semibold text-grape-900">Why folks love shopping with us</h2>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-blob bg-white p-6 shadow-soft ring-1 ring-grape-100">
+          <span class="grid h-14 w-14 place-items-center rounded-2xl bg-sun-200 text-3xl">🤝</span>
+          <h3 class="mt-4 font-display text-xl font-semibold text-grape-900">Friendly advice</h3>
+          <p class="mt-2 text-ink/70">Real people who love DIY, happy to help you pick the right thing.</p>
+        </div>
+        <div class="rounded-blob bg-white p-6 shadow-soft ring-1 ring-grape-100">
+          <span class="grid h-14 w-14 place-items-center rounded-2xl bg-grape-200 text-3xl">🚚</span>
+          <h3 class="mt-4 font-display text-xl font-semibold text-grape-900">Fast delivery</h3>
+          <p class="mt-2 text-ink/70">Free on orders over $99, with same-day dispatch on most items.</p>
+        </div>
+        <div class="rounded-blob bg-white p-6 shadow-soft ring-1 ring-grape-100">
+          <span class="grid h-14 w-14 place-items-center rounded-2xl bg-sky2-200 text-3xl">🛡️</span>
+          <h3 class="mt-4 font-display text-xl font-semibold text-grape-900">Quality guaranteed</h3>
+          <p class="mt-2 text-ink/70">Every product is tested by our team and backed by a solid warranty.</p>
+        </div>
+        <div class="rounded-blob bg-white p-6 shadow-soft ring-1 ring-grape-100">
+          <span class="grid h-14 w-14 place-items-center rounded-2xl bg-sun-200 text-3xl">↩️</span>
+          <h3 class="mt-4 font-display text-xl font-semibold text-grape-900">Easy returns</h3>
+          <p class="mt-2 text-ink/70">Changed your mind? Returns are free and simple within 30 days.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="mx-auto max-w-4xl px-4 pt-20 text-center">
+      <div class="flex justify-center" id="testimonial-stars"></div>
+      <blockquote class="mt-4 font-display text-2xl font-medium leading-relaxed text-grape-900 sm:text-3xl">
+        “I walked in needing one screw and walked out with a plan for my whole kitchen. The team at SC Industries are just lovely.”
+      </blockquote>
+      <p class="mt-4 font-bold text-ink/70">Jamie R., weekend renovator</p>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script>
+    document.getElementById('category-grid').innerHTML = CATEGORIES.map((c) => {
+      const count = PRODUCTS.filter((p) => p.category === c.id).length;
+      return `
+        <a href="products.html?category=${c.id}" class="group relative block aspect-[4/5] overflow-hidden rounded-blob shadow-soft lg:aspect-[3/4]">
+          <img src="${c.image}" alt="" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-grape-950/85 via-grape-900/20 to-transparent"></div>
+          <span class="absolute left-4 top-4 grid h-11 w-11 place-items-center rounded-full ${c.accent} text-xl shadow">${c.icon}</span>
+          <div class="absolute inset-x-0 bottom-0 p-5 text-white">
+            <h3 class="font-display text-2xl font-semibold">${c.name}</h3>
+            <p class="mt-1 text-sm text-grape-100">${c.blurb}</p>
+            <p class="mt-3 text-sm font-bold text-sun-300">${count} products →</p>
+          </div>
+        </a>`;
+    }).join('');
+
+    document.getElementById('featured-grid').innerHTML = PRODUCTS.filter((p) => p.featured)
+      .slice(0, 8)
+      .map(productCardHTML)
+      .join('');
+
+    document.getElementById('testimonial-stars').innerHTML = starsHTML(5, 'h-7 w-7');
+  </script>
+</body>
+</html>
