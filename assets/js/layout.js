@@ -106,7 +106,10 @@ function renderFooter() {
         </div>
       </div>
       <div class="border-t border-grape-800">
-        <p class="mx-auto max-w-7xl px-4 py-5 text-sm text-grape-300">© ${year} SC Industries. Made with care. Photos from StockSnap (CC0).</p>
+        <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-sm text-grape-300 sm:flex-row sm:items-center sm:justify-between">
+          <p>© ${year} SC Industries. Made with care. Photos from StockSnap (CC0).</p>
+          <p class="sm:text-right">Development by <span class="font-bold text-sun-300">Cody Schreiber</span>, hire him, he’s the best</p>
+        </div>
       </div>
     </footer>
     <div id="toast" role="status" aria-live="polite" class="hidden-toast fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-full bg-ink px-6 py-3 font-semibold text-white shadow-soft"></div>`;
